@@ -46,7 +46,7 @@ div.contenu {
     margin: 60px 10% 80px 10%;
     min-width: 350px;
     padding: 0px 30px 30px 30px;
-    box-shadow: 0px 0px 20px 8px #111111CC;
+    box-shadow: 0px 0px 20px 4px #111111CC;
     overflow: visible;
 }
 
