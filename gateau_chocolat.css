@@ -43,10 +43,9 @@ p.description {
 
 div.contenu {
     background-color: white;
-    margin: 60px 10% 80px 10%;
-    min-width: 350px;
-    padding: 0px 30px 30px 30px;
-    box-shadow: 0px 0px 20px 4px #111111CC;
+    margin: 40px 8px 40px 8px;
+    padding: 0px 8px 20px 8px;
+    box-shadow: 0px 0px 8px 1px #111111CC;
     overflow: visible;
 }
 
@@ -60,7 +59,7 @@ table.infos {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 100px;
+    height: 50px;
     color: white;
     background-color: #6c829Dc0;
     padding: 15px;
@@ -68,12 +67,12 @@ table.infos {
 
 table.infos td {
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     vertical-align: top;
 }
 
 table.infos th {
-    font-size: 16px;
+    font-size: 14px;
     vertical-align: bottom;
 }
 
@@ -90,7 +89,7 @@ img.infos {
 }
 
 div.colonne {
-    width: 45%;
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -105,11 +104,9 @@ div.colonne h2 {
 div.colonne1 {
     float: left;
     display: inline-block;
-    margin-right: 10%;
 }
 
 div.colonne2 {
-    float: right;
 }
 
 div.colonne-ingred p {
@@ -141,4 +138,47 @@ table.prepa td.prepa_td {
     padding-left: 10px;
     padding-bottom: 20px;
     font-size: 14px;
+}
+
+/* CSS pour ordinateur */
+@media only screen and (min-width: 768px) {
+    div.contenu {
+        margin: 60px 10% 80px 10%;
+        padding: 0px 30px 30px 30px;
+        box-shadow: 0px 0px 20px 5px #111111CC;
+        min-width: 350px;
+    }
+
+    table.infos {
+        height: 100px;
+    }
+
+    table.infos td {
+        font-size: 14px;
+    }
+    
+    table.infos th {
+        font-size: 16px;
+    }
+
+    div.colonne {
+        width: 45%;
+    }
+    
+    div.colonne1 {
+        float: left;
+        margin-right: 10%;
+    }
+    
+    div.colonne2 {
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    div.contenu {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 720px;
+    }
 }
